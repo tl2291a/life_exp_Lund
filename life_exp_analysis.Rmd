@@ -20,13 +20,11 @@ Here we begin the analysis.
 ```{r}
 library(gapminder)
 library(tidyverse)
-view(gapminder_unfiltered)
-new<-gapminder_unfiltered %>%
+data("gapminder_unfiltered")
+gapminder_unfiltered %>%
   group_by(year) %>%
   filter(lifeExp==max(lifeExp)) %>%
   arrange(year)
-view(new)
-
 ```
 
 # Plot
