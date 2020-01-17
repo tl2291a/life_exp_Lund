@@ -28,3 +28,5 @@ new<-gapminder_unfiltered %>%
 view(new)
 
 ```
+
+# Plot
